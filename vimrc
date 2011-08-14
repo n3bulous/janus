@@ -1,6 +1,6 @@
 set nocompatible
 
-set number
+"set number
 set ruler
 syntax on
 
@@ -125,11 +125,14 @@ set modeline
 set modelines=10
 
 " Default color scheme
-color desert
+"color solarized
+syntax enable
+set background=light
+color solarized
 
 " Directories for swp files
-set backupdir=~/.vim/backup
-set directory=~/.vim/backup
+set backupdir=~/.vim-backup
+set directory=~/.vim-backup
 
 " Turn off jslint errors by default
 let g:JSLintHighlightErrorLine = 0

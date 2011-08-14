@@ -1,4 +1,6 @@
 if has("gui_macvim")
+  set gfn=Mensch:h13
+
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
@@ -69,7 +71,11 @@ set visualbell
 set guioptions-=T
 
 " Default gui color scheme
-color ir_black
+"color ir_black
+syntax enable
+set background=light
+color solarized
+
 
 " ConqueTerm wrapper
 function StartTerm()
